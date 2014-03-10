@@ -78,6 +78,7 @@ public class RegisterAccountActivity extends Activity {
 		@Override
 		protected Boolean doInBackground(Void... args) {
 			database.createAccount(loggedInEmail, rAccName);
+			Log.d("Accounts:", database.getAllAccounts());
 			return true;
 		}
 		
